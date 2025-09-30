@@ -140,7 +140,7 @@ class AirbrakesSimulation:
 
 
 if __name__ == "__main__":
-    # Normal
+    # Normal w/o Airbrakes
     sim_normal = AirbrakesSimulation()
     test_flight_normal = Flight(
         rocket=sim_normal.calisto,
