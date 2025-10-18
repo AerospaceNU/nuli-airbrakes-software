@@ -165,14 +165,19 @@ if __name__ == "__main__":
         terminate_on_apogee=True,
     )
 
+    test_flight_airbrakes.rocket.evaluate_center_of_mass()
+    test_flight_airbrakes.rocket.evaluate_center_of_pressure()
+    print("Center of mass", test_flight_airbrakes.rocket.center_of_mass)
+    print("Center of mass", test_flight_airbrakes.rocket.evaluate_center_of_pressure())
+
     print("Flight w/o Airbrakes Apogee:", test_flight_normal.apogee)
     print("Flight w Airbrakes Apogee:", test_flight_airbrakes.apogee)
 
     # time_list, deployment_level_list, drag_coefficient_list = [], [], []
     #
-    # obs_vars = test_flight.get_controller_observed_variables()
+    # obs_vars = test_flight_airbrakes.get_controller_observed_variables()
     #
-    # print(test_flight.apogee)
+    # print(test_flight_airbrakes.apogee)
     #
     # for time, deployment_level, drag_coefficient in obs_vars:
     #     time_list.append(time)

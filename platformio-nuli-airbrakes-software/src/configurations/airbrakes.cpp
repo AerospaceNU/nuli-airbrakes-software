@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#include "ApogeePredictor.h"
+
 void setup() {
 // write your initialization code here
 }
